@@ -6,19 +6,21 @@ import LayOut from './components/layOut/layOut'
 const App = () => {
   return (
     <>
-      <Routes>
-        {/* Main User Layout */}
-        <Route path="/" element={<LayOut />}>
-          <Route index element={<Home />} />
+      <div>
+        <Routes>
+          {/* Main User Layout */}
+          <Route path="/" element={<LayOut />}>
+            <Route index element={<Home />} />
 
-        </Route>
+          </Route>
 
-        {/* Admin Panel Routes under AdminLayout */}
-        {/* <Route path="/adminportal" element={<AdminLayout />}>
+          {/* Admin Panel Routes under AdminLayout */}
+          {/* <Route path="/adminportal" element={<AdminLayout />}>
           <Route index element={<DashBoard />} />
 
        </Route> */}
-      </Routes>
+        </Routes>
+      </div>
     </>
   )
 }
